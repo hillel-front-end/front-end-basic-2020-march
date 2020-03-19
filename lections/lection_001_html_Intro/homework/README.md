@@ -1,12 +1,11 @@
 ﻿# Изучить материал
 
-1. Читаем информационные ресурсы:
- * [веб цвета](http://htmlbook.ru/samhtml/znacheniya-atributov-tegov/tsvet)
- * [веб размерности](http://htmlbook.ru/samhtml/znacheniya-atributov-tegov/razmer)
- * [работа с текстом](http://htmlbook.ru/samhtml/tekst)
- * [блочные элементы](http://htmlbook.ru/samhtml/tipy-tegov/blochnye-elementy)
- * [строчные элементы](http://htmlbook.ru/samhtml/tipy-tegov/strochnye-elementy)
- * [парные и непарные теги](http://ibrain.kz/sozdanie-web-saytov/parnye-i-odinochnye-tegi-konteynery)
+* http://htmlbook.ru/samhtml/znacheniya-atributov-tegov/tsvet
+* http://htmlbook.ru/samhtml/znacheniya-atributov-tegov/razmer
+* http://htmlbook.ru/samhtml/tekst
+* http://htmlbook.ru/samhtml/tipy-tegov/blochnye-elementy
+* http://htmlbook.ru/samhtml/tipy-tegov/strochnye-elementy
+* http://ibrain.kz/sozdanie-web-saytov/parnye-i-odinochnye-tegi-konteynery
 
 # Практика
 
