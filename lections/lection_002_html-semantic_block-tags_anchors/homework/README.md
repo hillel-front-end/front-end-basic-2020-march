@@ -3,9 +3,8 @@
   * https://webref.ru/course/html-basics/formatting
   * https://webref.ru/course/html-basics/semantics
   * https://webref.ru/course/html-basics/block-inline
-
-
-\
+  * https://developer.mozilla.org/ru/docs/Learn/HTML/Tables/Basics
+  * https://developer.mozilla.org/ru/docs/Learn/HTML/Tables/Advanced
 ## 4) Практика:
  * [Оформите в виде веб-страницы следующий текст](http://prntscr.com/lidkgj)
  * [Сверстать списки](http://prntscr.com/lidmpj)

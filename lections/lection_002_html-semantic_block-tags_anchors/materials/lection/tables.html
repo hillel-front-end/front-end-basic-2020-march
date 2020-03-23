@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- 
+        Тезисы:
+            - chrome inspector
+            - using div, span, img (src, alt, width, height, align)
+            - links, absolute and relative path
+            - table - tr, td, th, border, cellpadding, cellspacing, colgroup, caption
+            - table - rowspan, colspan
+
+        
+        Практика:
+            - practice with table, cell union (merge)
+    -->    
+</head>
+<body>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <caption>Table description</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: aquamarine;">
+        </colgroup>
+        <tr>
+            <!-- table heading -->
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        <!-- table row -->
+        <tr>
+            <!-- table data cell -->
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6sfdhdgnjksnjklsdklgskln</td>
+            <!-- <td>7</td> -->
+        </tr>
+    </table>
+
+    <hr>
+
+
+    <table border="1">
+        <caption>Column merge</caption>
+        <tr>
+            <td>Index 1</td>
+            <td colspan="2">Index 2 Index 3</td>
+            <!-- <td>Index 3</td> -->
+        </tr>   
+        <tr>
+            <td>Index 4</td>
+            <td>Index 5</td>
+            <td>Index 6 aksjdnasjlkd n</td>
+        </tr>
+        </tr>   
+        <tr>
+            <td>Index 7</td>
+            <td>Index 8 ajkdna</td>
+            <td>Index 9 aksjdnasj</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <caption>Row merge</caption>
+        <tr>
+            <td>Index 1</td>
+            <td rowspan="3">Index 2</td>
+            <td>Index 3</td>
+        </tr>   
+        <tr>
+            <td>Index 4</td>
+            <!-- <td>Index 5</td> -->
+            <td>Index 6</td>
+        </tr>
+        </tr>   
+        <tr>
+            <td>Index 7</td>
+            <!-- <td>Index 8</td> -->
+            <td>Index 9</td>
+        </tr>
+    </table>
+    
+    <hr>
+
+    <table border="1">
+        <caption>Col + Row merge</caption>
+        <tr>
+            <td>index 1</td>
+            <td>index 2</td>
+            <td><img src="./cat1.jpg" width="100" alt=""></td>
+        </tr>   
+        <tr>
+            <td colspan="2" rowspan="3">index 4</td>
+            <!-- <td>index 5</td> -->
+            <td>index 6</td>
+        </tr>   
+        </tr>   
+        <tr>
+            <!-- <td>index 7</td>
+            <td>index 8</td> -->
+            <td>index 9</td>
+        </tr>   
+        </tr>   
+        <tr>
+            <!-- <td>index 10</td>
+            <td>index 11</td> -->
+            <td>index 12</td>
+        </tr>   
+    </table>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        <img src="cat1.jpg" width="100" alt="" align="middle">
+        Recusandae ad quas, rem, nisi reprehenderit laborum libero accusamus doloribus modi architecto unde ullam praesentium. Corrupti, adipisci optio. Laudantium nemo assumenda dolor.
+        <img src="cat1.jpg" width="100" alt="" align="bottom">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit animi quae facilis deleniti? Sed tempore placeat voluptatum quos in! Quod repudiandae velit in! Dignissimos quam perferendis mollitia dolores ipsum totam.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime commodi obcaecati exercitationem blanditiis nobis quae delectus! Vero quia, quod quam vel at quae! Debitis optio vitae veniam ipsam ab. Aspernatur?
+    </p>
+
+
+    <table>
+        tr*10>td*5
+    </table>
+</body>
+</html>
