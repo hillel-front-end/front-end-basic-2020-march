@@ -1,0 +1,103 @@
+/* div {
+    color: red;
+    font-size: 24px;
+    background-color: aqua;
+} */
+
+/* By Type */
+/* div {
+    color: red; 
+    font-size: 24px; 
+    background-color: aqua;
+}
+
+span {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+} */
+
+
+/* By Class name */
+
+.super-block {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* By Id */
+
+#unique-text {
+    font-size: 12px;
+    color: blueviolet;
+    text-shadow: red 1px 2px 3px;
+}
+
+/* Combinators  */
+
+.block-1, 
+.block-3, 
+#super-element-unique, 
+.my-link {
+    text-decoration: underline;
+}
+
+/* Very bad */
+/* .block-3 {
+    text-decoration: underline;
+} */
+
+/* By Attribute */
+
+[data-front-basic] {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Universal selectors */
+
+* {
+   font-size: 10px; 
+}
+
+/* Inheritance */
+
+/* .bold-text li li {
+    color: goldenrod;
+    font-weight: bold;
+} */
+
+
+/* .ul-level-3 li {
+    color: goldenrod;
+    font-weight: bold;
+} */
+
+/* .ul-level-2 li {
+    color: green;
+} */
+
+/*  >  */
+.ul-level-2 > li {
+    color: green;
+}
+
+.underline > * {
+    text-decoration: underline;
+}
+
+.index-5-elem {
+    color: red;
+}
+
+.ul-container .first-element, 
+.ul-container .last-element,
+.block-super {
+    border: 2px solid #000;
+}
+
+/* Bad */
+/* .ul-container .last-element {
+    border: 2px solid #000;
+}  */
