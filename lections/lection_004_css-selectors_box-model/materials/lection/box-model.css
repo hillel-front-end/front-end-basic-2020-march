@@ -1,0 +1,112 @@
+.block {
+    width: 300px;
+    height: 300px;
+    /* background-color: honeydew; */
+    /* border: size type color?; */
+    border: 5px solid yellowgreen;
+    border-radius: 4px;
+}
+
+/* .block:hover {
+    border-radius: 50%;
+} */
+
+.block:hover {
+    /* border-top-left-radius: 75px; */
+    /* border-top-right-radius: 75px; */
+    /* border-bottom-right-radius: 75px; */
+    /* border-bottom-left-radius: 75px; */
+
+    /* border-radius: 45px 75px 23px 64px; */
+    /* border-radius: 60px 120px; */
+}
+
+.element {
+    width: 100px;
+    height: 75px;
+    background-color: brown;
+    border-right: 10px solid fuchsia;
+    border-top: 10px solid violet;
+    border-bottom: 10px solid pink;
+    border-left: 10px solid yellowgreen;
+}
+
+/* padding */
+
+.block {
+    /* padding: 20px; */
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding: 10px 20px 30px 40px; */
+    /* padding: 20px 50px; */
+}
+
+/* margin */
+
+.block {
+    /* margin: 50px; */
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    /* margin: 10px 20px 30px 40px; */
+    /* margin: 10px 50px; */ /* сверху+снизу и справа+слева */
+}
+
+/* --------------------------------------------------------- */
+/* display: block; */
+.block {
+    display: block;
+}
+
+.block-auto {
+    /* margin: auto; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 0 auto;
+}
+
+
+/* --------------------------------------------------------- */
+/* display: inline; */
+
+.inline-elem {
+    margin-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 15px;
+    padding-top: 15px;
+    height: 500px;
+    width: 500px;
+}
+
+/* ----------------------------------------------------------- */
+/* display: inline-block; */
+
+
+.container {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 500px;
+    font-size: 0;
+    text-align: center;;
+}
+
+.container .elem {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+    vertical-align: top;
+}
+
+.container .elem:nth-child(3) {
+    margin-top: 45px;
+}
+
+
+.container .elem:nth-child(6) {
+    margin-right: auto;
+}

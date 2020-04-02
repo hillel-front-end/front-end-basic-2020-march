@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="box-model.css">
+    <!-- 
+
+        - box model - intro
+        - border, border-radius
+        - padding
+        - margin, auto
+
+     -->
+</head>
+<body>
+    <!-- блочный -->
+    <!-- 
+        1) ширина на 100% от родителя
+        2) высота зависит от контента
+     -->
+    <div class="block">
+        Content 1
+    </div>
+    <div class="block block-auto">
+        Content 2 auto
+    </div>
+    <div class="block">
+        Content 3
+    </div>
+    <div class="element"></div>
+
+    <hr>
+
+    <span class="inline-elem">Example span</span>
+    <a class="inline-elem" href="#">Example link</a>
+    <hr>
+
+    <div class="container">
+        <div class="elem"></div>
+        <div class="elem"></div>
+        <div class="elem"></div>
+        <div class="elem"></div>
+        <div class="elem"></div>
+        <div class="elem"></div>
+        <div class="elem"></div>
+        <div class="elem"></div>
+    </div>
+
+    <!-- Display -->
+    <!-- 
+        *block  - блочный элемент
+        *inline - встроенный элемент (не создает перевода строки, и не доступны сss cвойства:
+            width\height, margin-top, margin-bottom);
+        *none   - Элемент не показывается, вообще. Как будто его и нет.
+     -->
+
+
+     <!-- inline-block -->
+     <!-- 
+        Как и инлайн-элемент(inline):
+            - Располагается в строке.
+            - Размер устанавливается по содержимому.
+        Во всём остальном – это блок, то есть:
+            - Работают свойства width/height.
+            - доступны margin-top, margin-bottom, paddings.
+      -->
+</body>
+</html>
