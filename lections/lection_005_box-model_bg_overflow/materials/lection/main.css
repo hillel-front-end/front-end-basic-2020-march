@@ -1,5 +1,178 @@
+.container {
+    border: 1px solid red;
+    padding: 5px;
+    /* font-size: 0; */
+}
+
 .block {
     height: 50px;
-    width: 200px;
-    border: 4px solid black;
+    width: 50px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.block.b-1 {
+    vertical-align: top;
+}
+
+.block.b-2 {
+    width: 100px;
+}
+
+.block.b-3 {
+    height: 120px;
+}
+
+.block.b-4 {
+    vertical-align: middle;
+}
+
+.block-sizing {
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+    border: 4px solid red;
+}
+
+.block-sizing.b-1 {
+    padding: 30px;
+    /* box-sizing: content-box; */
+}
+
+.block-sizing.b-2 {
+    padding: 30px;
+    /* box-sizing: border-box; */
+}
+
+.block-sizing.b-3 {
+    padding: 30px;
+    /* box-sizing: padding-box; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bg-block {
+    width: 250px;
+    height: 180px;
+    border: 2px solid black;
+}
+
+.bg-block.b-1 {
+    /* background-color: red; */
+    /* background-color: #8f83ce; */
+    /* background-color: rgb(143, 131, 206); */
+    /* background-color: hsl(278, 98%, 67%); */
+    /* background: red; */
+    /* opacity: 0.5; */
+    /* background-color: rgba(143, 131, 206, 0.5); */
+    background-color: hsla(278, 98%, 67%, 0.43);
+}
+
+.bg-block.b-2 {
+    background-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background-repeat: repeat-y;
+}
+
+.bg-block.b-3 {
+    background-image: url(https://freefrontend.com/assets/img/css-background-patterns/underwater-css-pattern.png);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-size: 100px;
+    /* background-size: 150px 75px; */
+    /* background-size: 50% 50%; */
+    /* background-position: left top; */
+    /* background-position: left bottom; */
+    /* background-position: top right; */
+    /* background-position: bottom right; */
+    /* background-position: center bottom; */
+    /* background-position: center top 40px; */
+    /* background-position: center bottom 40px; */
+    background-position: right 55px top 40px;
+}
+
+.bg-block.b-4 {
+    background-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+    background-repeat: no-repeat;
+
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-block.b-5 {
+    padding: 40px;
+    border: 10px dotted black;
+
+    background-image: url(https://static.thenounproject.com/png/145685-200.png);
+    /* background-repeat: no-repeat; */
+    background-size: 5px;
+    /* background-origin: padding-box; */
+    /* background-origin: content-box; */
+    /* background-position: 70px center; */
+    /* background-origin: border-box; */
+    /* background-position: center;
+    border-right: 40px dotted black; */
+}
+
+
+.container-green {
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid green;
+    padding: 5px;
+}
+
+.container-green .header {
+    border: 2px solid red;
+    padding: 5px;
+    font-size: 0;
+}
+
+.container-green .header .block-blue {
+    width: 33.3333%;
+    display: inline-block;
+    border: 2px solid blue;
+    padding: 5px;
+    height: 100px;
+}
+
+.block-blue .item-yellow {
+    border: 2px solid orange;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    background-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    height: 700px;
+    border: 2px solid brown;
+}
+
+.bg-image {
+    background-image: url(https://assets.ithillel.ua/images/banners/_transform_homepageBannerRect_2x/online.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.bg-color {
+    height: 250px;
+    background-color: rgba(213, 56, 79, 0.8);
+}
+
+body {
+    background-image: url(https://assets.ithillel.ua/assets/school/images/logos/homepage_flame.svg);
+    background-size: 5px;
 }
