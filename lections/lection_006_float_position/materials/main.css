@@ -1,0 +1,18 @@
+.container {
+    border: 2px solid black;
+}
+
+.block {
+    width: 100px;
+    height: 75px;
+    border: 2px solid red;
+}
+
+.b-2 {
+    float: left;
+    border: 2px solid green;
+}
+
+.b-3 {
+    /* display: inline; */
+}
