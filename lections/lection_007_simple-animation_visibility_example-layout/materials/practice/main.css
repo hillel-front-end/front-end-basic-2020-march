@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    height: 115px;
+    border-bottom: 1px solid grey;
+    margin-top: 30px;
+}
+
+.header-container {
+    height: 50%;
+}
+
+.header-logo,
+.header-search {
+    float: left;
+    height: 100%;
+}
+
+.header-actions {
+    float: right;
+    height: 100%;
+}
+
+.header-logo__image {
+    padding-left: 30px;
+}
+
+.header-search {
+    position: relative;
+}
+
+.header-search__input {
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    height: 44px;
+    outline: none;
+    width: 638px;
+    padding-left: 35px;
+    padding-right: 25%;
+    transition: box-shadow .2s, border-color .2s;
+}
+
+.header-search__input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+i.search-icon {
+    position: absolute;
+    left: 5px;
+    /* top: calc(50% - 12px); */
+    top: calc(22px - 12px);
+    opacity: 0;
+
+    transition: .25s;
+}
+
+.header-search__input:focus + .search-icon {
+    opacity: 1;
+}
+
+
+.header-search__icons-group {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.header-search__icons-group .material-icons {
+    /* margin-right: 20px; */
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* .header-search__icons-group .material-icons:last-child {
+    margin-right: 0;
+} */
+
+.actions-icon {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.actions-icon:hover {
+    background-color: #dfe1e5;
+}
+
+.user-avatar {
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    position: relative;
+}
+
+.user-avatar__image {
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-avatar__tooltip {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    height: 75px;
+    border-radius: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .1s;
+    transition-delay: .75s;
+    position: absolute;
+    top: 120%;
+    right: 75%;
+}
+
+.user-avatar__image:hover + .user-avatar__tooltip{
+    opacity: 1;
+    visibility: visible;
+}

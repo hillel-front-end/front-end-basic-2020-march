@@ -1,0 +1,73 @@
+
+
+.block {
+    width: 100px;
+    height: 200px;
+    background-color: blueviolet;
+
+    /* transition: 3s; */
+    /* transition: height 1s ease .5s, background-color 1s ease-out 0s, box-shadow .2s step-start 3s; */
+
+    transition-property: height, background-color, box-shadow;
+    transition-duration: 1s, 1s, .2s;
+    transition-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0), ease-out, ease-in-out; 
+    transition-delay: 0.5s, 0s, 3s;
+}
+
+.block:hover {
+    background-color: blue;
+    height: 100px;
+    box-shadow: 10px 20px 3px black;
+}
+
+/* Transition */
+/* transition: имя свойства | длительность | временная функция | задержка */
+
+
+
+/* Transform */
+
+/* 
+    transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: perspective(17px);
+    transform: rotate(0.5turn);
+    transform: rotate3d(1, 2.0, 3.0, 10deg);
+    transform: rotateX(10deg);
+    transform: rotateY(10deg);
+    transform: rotateZ(10deg);
+    transform: translate(12px, 50%);
+    transform: translate3d(12px, 50%, 3em);
+    transform: translateX(2em);
+    transform: translateY(3in);
+    transform: translateZ(2px);
+    transform: scale(2, 0.5);
+    transform: scale3d(2.5, 1.2, 0.3);
+    transform: scaleX(2);
+    transform: scaleY(0.5);
+    transform: scaleZ(0.3);
+    transform: skew(30deg, 20deg);
+    transform: skewX(30deg);
+    transform: skewY(1.07rad);
+*/
+
+.block-animated {
+    width: 100px;
+    height: 200px;
+    background-color: goldenrod;
+    border: 2px solid black;
+    box-shadow: 2px 3px 2px red;
+    transition: 1s;
+    transform: rotate(0);
+    /* transition-delay: 2s; */
+}
+
+.block-animated:hover {
+    /* transform: rotateY(45deg); */
+    /* transform: rotate(90deg); */
+    /* transform: translate(100px, 100%); */
+    transform: scale(1.5) rotate(270deg);
+
+    transition: .8s;
+    transition-delay: 0s;
+}

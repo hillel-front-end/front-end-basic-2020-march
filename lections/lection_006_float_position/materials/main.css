@@ -1,5 +1,22 @@
 .container {
     border: 2px solid black;
+    padding: 10px;
+    /* overflow: auto; */
+    /* position: relative; */
+    /* position: fixed; */
+
+    top: 300px;
+    left: 20px;
+}
+
+.overflow-example {
+    width: 250px;
+    height: 130px;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow-x: scroll; */
+    /* overflow-y: hidden; */
+    /* overflow: hidden; */
 }
 
 .block {
@@ -8,11 +25,85 @@
     border: 2px solid red;
 }
 
+.b-1 {
+    float: left;
+    /* float: left; */
+    /* float: none; */
+    margin: 5px;
+    border: 2px solid gold;
+}
+
 .b-2 {
     float: left;
     border: 2px solid green;
+    margin: 10px;
+    padding-top: 25px;
 }
 
 .b-3 {
     /* display: inline; */
+    float: left;
+    margin: 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* -------------------------------- */
+
+.p-1 {
+    float: left;
+    /* position: static; */
+    position: relative;
+
+    /* top, left, right, bottom */
+    /* left: -40px;
+    top: 60px; */
+    /* right: 50px;
+    bottom: 50px; */
+    border-color: red;
+    background-color: rgba(0, 255, 0, 0.5);
+    z-index: 3;
+}
+
+.p-2 {
+    float: left;
+    border-color: green;
+    background-color: rgba(255, 0, 0, 0.45);
+
+    position: absolute; /* вырывается с потока */
+    height: 50px;
+    top: 100%;
+    right: 0;
+}
+
+.p-3 {
+    float: left;
+    border-color: blue;
+
+    position: relative;
+    left: -25px;
+    top: 15px;
+    z-index: 2;
+    background-color: rgba(0, 0, 255, 0.5);
+    
+    /* top: 20px; */
+}
+
+.p-4 {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    /* float: left; */
+    background-color: rgba(0, 0, 0, 0.55);
+    border-color: transparent;
+    font-size: 80px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
