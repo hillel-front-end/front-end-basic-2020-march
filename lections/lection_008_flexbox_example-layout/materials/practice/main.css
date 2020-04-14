@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+/* general */
+.bg-image {
+    z-index: 1;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url(https://html5up.net/uploads/demos/spectral/images/banner.jpg);
+    background-size: 100%;
+}
+
+.header {
+    position: fixed;
+    height: 52px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .action {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header .material-icons {
+    margin-left: 5px;
+}
+
+
+/* section-1 */
+
+.section-1 {
+    height: 100vh;
+}
+
+
+
+/* Menu */
+
+.menu-container {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .25);
+
+    z-index: 3;
+    transition: .5s ease;
+}
+
+.menu-container.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-element {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 340px;
+    height: 100%;
+    background-color: #21b2a6;
+    transition: left .5s ease, opacity .5s ease .3s;
+}
+
+.menu-container.visible .menu-element {
+    left: calc(100% - 340px);
+    transition: left .5s ease .5s, opacity .5s ease .5s;
+}
+
+.menu-element .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 36px;
+}
+
