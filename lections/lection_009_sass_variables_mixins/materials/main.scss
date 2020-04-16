@@ -1,0 +1,36 @@
+// @use "styles/variables";
+@import "styles/core";
+
+$fs-xs: $font-size-default;
+
+.container {
+    color: red;
+    font-size: $fs-xs;
+    width: $example;
+
+    .link {
+        font-size: $fs-xl;
+
+        @include super-group();
+    }
+
+    span.super-test {
+        @include super-group(aqua, 10px);
+    }
+}
+
+.block-flex {
+    @include flex;
+}
+
+.element {
+    @include flex(column, center, center);
+}
+
+.super-elem {
+    @include border;
+}
+
+.super-elem__red {
+    @include border(red, 10px);
+}

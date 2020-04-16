@@ -1,0 +1,69 @@
+html {
+  height: 100%;
+}
+
+.container {
+  color: red;
+  font-size: 12px;
+  width: 600px;
+}
+
+.container .link {
+  font-size: 28px;
+  color: #fff;
+  width: 100%;
+  height: 280px;
+  background-color: black;
+}
+
+.container span.super-test {
+  color: aqua;
+  width: 100%;
+  height: 290px;
+  background-color: black;
+}
+
+.block-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.super-elem {
+  border: 2px solid black;
+  border-radius: 12px;
+  border-top-color: green;
+}
+
+.super-elem__red {
+  border: 2px solid black;
+  border-radius: 10px;
+  border-top-color: red;
+}
+/*# sourceMappingURL=main.css.map */

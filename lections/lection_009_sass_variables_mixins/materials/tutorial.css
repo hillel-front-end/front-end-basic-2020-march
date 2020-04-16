@@ -1,0 +1,32 @@
+.container {
+  color: rgba(234, 12, 28, 0.75);
+}
+
+.container .block {
+  font-size: 14px;
+}
+
+.container .link {
+  text-decoration: none;
+}
+
+.container .link:hover {
+  background-color: royalblue;
+}
+
+.container ul {
+  padding-left: 0;
+}
+
+.container ul li {
+  list-style-type: circle;
+}
+
+.container ul > li {
+  border-radius: 15px;
+}
+
+.container ul > li span {
+  background-color: rgba(234, 12, 28, 0.75);
+}
+/*# sourceMappingURL=tutorial.css.map */

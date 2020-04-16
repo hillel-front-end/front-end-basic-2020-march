@@ -1,0 +1,35 @@
+$font-size-default: 12px;
+
+$color-primary: #fff;
+$fs-xs: 18px;
+$fs-md: 24px;
+$fs-xl: 28px;
+$example: 600px;
+
+html {
+    height: 100%;
+}
+
+
+// примеси mixins
+// функций
+@mixin super-group($color: $color-primary, $test: 0px) {
+    color: $color;
+    width: 100%;
+    height: 280px + $test;
+    background-color: black;
+}
+
+@mixin flex($dir: row, $align: flex-start, $just: flex-start) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $just;
+}
+
+
+@mixin border($topCol: green, $rad: 12px) {
+    border: 2px solid black;
+    border-radius: $rad;
+    border-top-color: $topCol;
+}
