@@ -13,3 +13,8 @@
 * https://roadmap.sh/frontend
 
 # Практика
+
+1) Создать отдельный файл для миксинов и переменных. Подключить к главному файлу. Создать миксины:
+    - `float($direction, $margin-l-r)`, где $direction - направление для float, $margin-l-r - отступ слева и справа от края родительского контейнера
+    - `border-reset()`, который сбросит значения broder-color, border-style, border-radius
+    - `transition($delay, $duration)`, который присвоит значения transition-свойств для задержки в переходе $delay за $duration секунд
