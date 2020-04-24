@@ -1,0 +1,95 @@
+$fs-xss: 8px;
+$fs-xs: 10px;
+$fs-m: 14px;
+$fs-xl: 24px;
+$fs-xxl: 32px;
+
+$fw-bold: 700;
+$fw-normal: 500;
+$fw-thin: 300;
+
+$margin-l: 20px;
+$margin-m: 10px;
+$margin-s: 5px;
+
+
+// entities
+$title-1: (
+    font-size: $fs-xxl,
+    font-weight: $fw-bold,
+    margin-bottom: $margin-l,
+    padding: $margin-m 0
+);
+
+$title-2: (
+    font-size: $fs-xl,
+    font-weight: $fw-normal,
+    margin-bottom: $margin-m
+);
+
+$p-1: (
+    font-size: $fs-m,
+    margin-bottom: $margin-m
+);
+
+$p-2: (
+    font-size: $fs-xs,
+    margin-bottom: $margin-s
+);
+
+$p-3: (
+    font-size: $fs-xss,
+    margin-bottom: $margin-s
+);
+
+
+$title-map: (
+    type_1: $title-1,
+    type_2: $title-2
+);
+
+$paragraph-map: (
+    type_1: $p-1,
+    type_2: $p-2,
+    type_3: $p-3
+);
+
+@mixin title($size: 1) {
+    @each $key, $val in map-get($title-map, type_#{$size}) {
+        #{$key}: $val;
+    }
+}
+
+
+@mixin paragraph($size: 1) {
+    @each $key, $val in map-get($paragraph-map, type_#{$size}) {
+        #{$key}: $val;
+    }
+}
+
+/*
+    title-1 -> font-size: 32px; font-weight: bold; margin-bottom: 20px;
+    title-2 -> font-size: 24px; font-weight: normal; margin-bottom: 10px;
+
+    paragraph-1 -> font-size: 14px; margin-bottom: 10px; margin-top: 10px;
+    paragraph-2 -> font-size: 10px; margin-bottom: 5px; margin-top: 5px;
+    paragraph-3 -> font-size: 8px; margin-bottom: 5px; margin-top: 5px;
+*/
+
+
+
+.article-header {
+    @include title(1);
+}
+
+.article-header-2 {
+    @include title(2);
+}
+
+.article-content {
+    @include paragraph(1);
+}
+
+.page-header {
+    @include title(2);
+}

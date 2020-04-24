@@ -1,0 +1,193 @@
+// @use "styles/variables";
+@import "styles/core";
+
+
+
+$value: april;
+
+
+.block {
+  color: $value;
+}
+
+.element-#{$value} {
+  font-size: 12px;
+}
+
+$status-error: error;
+$status-warning: warning;
+$status-notification: notification;
+
+.status {
+  text-decoration: underline;
+  font-size: 24px;
+  color: black;
+
+  &.#{$status-error} {
+    color: red;
+  }
+
+  &-#{$status-warning} {
+    color: yellow;
+  }
+
+  &-#{$status-notification} {
+    color: green;
+  }
+}
+
+$level_1: 1;
+$level_2: two;
+
+$part_1: 12px;
+$part_2: 2;
+
+.list {
+  text-emphasis: none;
+
+  color: #{$part_1}/#{$part_2};
+
+
+  .list-item-#{$level_1} {
+    background-color: aqua;
+  }
+
+  .list-item-#{$level_2} {
+    background-color: goldenrod;
+  }
+}
+
+
+// Maps
+// $examples:  (
+//   key1: value1, 
+//   key2: value2, 
+//   key3: value3
+// );
+
+$person: (
+    height: 2,
+    hair-color: #000,
+    weight: 80
+);
+
+$super-key: hair-color;
+
+// map-get
+.map-example {
+  font-size: 12px;
+  // background-color: map-get($person, 'hair-color');
+  background-color: map-get($person, $super-key);
+}
+
+
+// @each
+.message {
+  @each $prop, $val in $person {
+    .prop-#{$prop} {
+      font-size: 24px;
+      background: $val;
+    }
+  }
+}
+
+
+$bg-colors: (
+  l-0: #000,
+  l-1: red,
+  l-2: blue,
+  l-3: violet,
+  l-4: #fff,
+  l-5: yellowgreen,
+  l-6: yellow
+);
+
+$default: #fff;
+
+.deep-list {
+  @each $level, $bg-color in $bg-colors {
+    .level__#{$level} {
+      font-size: 12px;
+      background-color: $bg-color;
+      color: #000;
+
+      @if($bg-color == #000) {
+        color: #fff;
+      }
+      
+      @if($bg-color == red) {
+        color: rgb(56, 179, 56);
+      }
+    }
+  }
+}
+
+
+// @if
+
+$type: monster;
+
+.element-block-if {
+  color: red;
+
+  @if $type == monster {
+    font-size: 100px;
+  }
+}
+
+
+
+// if circle -> border-radius: 50%;
+
+@mixin avatar($size, $circle: false) {
+  width: $size;
+  height: $size;
+  
+  @if($circle == true) {
+    border-radius: $size/2;
+  } @else {
+    border-radius: 4px;
+  }
+}
+
+
+
+.block-elem-circle {
+  @include avatar(40px, true);
+}
+
+.block-elem-rect {
+  @include avatar(40px, false);
+}
+
+
+// Placeholders
+
+
+%button {
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+
+  &:hover {
+    box-shadow: 1px 2px 3px black;
+  }
+}
+
+
+$ext: 2;
+.button-accept {
+
+  @if $ext == 1 {
+    @extend %button;
+  }
+
+  background-color: green;
+}
+
+// .button-decline {
+//   @extend %button;
+
+//   background-color: red;
+// }
+

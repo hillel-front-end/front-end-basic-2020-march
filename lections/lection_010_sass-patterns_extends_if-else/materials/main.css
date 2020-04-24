@@ -1,0 +1,129 @@
+html {
+  height: 100%;
+}
+
+.block {
+  color: april;
+}
+
+.element-april {
+  font-size: 12px;
+}
+
+.status {
+  text-decoration: underline;
+  font-size: 24px;
+  color: black;
+}
+
+.status.error {
+  color: red;
+}
+
+.status-warning {
+  color: yellow;
+}
+
+.status-notification {
+  color: green;
+}
+
+.list {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  color: 12px/2;
+}
+
+.list .list-item-1 {
+  background-color: aqua;
+}
+
+.list .list-item-two {
+  background-color: goldenrod;
+}
+
+.map-example {
+  font-size: 12px;
+  background-color: #000;
+}
+
+.message .prop-height {
+  font-size: 24px;
+  background: 2;
+}
+
+.message .prop-hair-color {
+  font-size: 24px;
+  background: #000;
+}
+
+.message .prop-weight {
+  font-size: 24px;
+  background: 80;
+}
+
+.deep-list .level__l-0 {
+  font-size: 12px;
+  background-color: #000;
+  color: #000;
+  color: #fff;
+}
+
+.deep-list .level__l-1 {
+  font-size: 12px;
+  background-color: red;
+  color: #000;
+  color: #38b338;
+}
+
+.deep-list .level__l-2 {
+  font-size: 12px;
+  background-color: blue;
+  color: #000;
+}
+
+.deep-list .level__l-3 {
+  font-size: 12px;
+  background-color: violet;
+  color: #000;
+}
+
+.deep-list .level__l-4 {
+  font-size: 12px;
+  background-color: #fff;
+  color: #000;
+}
+
+.deep-list .level__l-5 {
+  font-size: 12px;
+  background-color: yellowgreen;
+  color: #000;
+}
+
+.deep-list .level__l-6 {
+  font-size: 12px;
+  background-color: yellow;
+  color: #000;
+}
+
+.element-block-if {
+  color: red;
+  font-size: 100px;
+}
+
+.block-elem-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.block-elem-rect {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.button-accept {
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */
