@@ -1,0 +1,25 @@
+.block {
+  width: 450px;
+  background-color: red;
+  height: 250px;
+}
+
+.block .block-icon {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .block .block-icon {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  .block {
+    width: 380px;
+  }
+  .block .block-icon {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

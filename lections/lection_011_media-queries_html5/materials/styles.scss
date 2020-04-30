@@ -1,0 +1,47 @@
+$mobile-max: 768px;
+$tablet-max: 1200px;
+
+
+@mixin resp($type: desktop) {
+    @if $type == tablet {
+        @media (max-width: $tablet-max) and (min-width: $mobile-max + 1) {
+            @content;
+        }
+    }
+    @if $type == mobile {
+        @media (max-width: $mobile-max) {
+            @content;
+        }
+    }
+}
+
+
+
+.block {
+    width: 450px;
+    background-color: red;
+    height: 250px;
+
+    .block-icon {
+        font-size: 24px;
+
+        @include resp(mobile) {
+            text-decoration: underline;
+        }
+    } 
+
+    @include resp(tablet) {
+        width: 380px;
+
+        .block-icon {
+            font-size: 14px;
+        } 
+    }
+}
+
+
+// @media (max-width: 1200px) {
+//     .block {
+//         width: 380px;
+//     }
+// }

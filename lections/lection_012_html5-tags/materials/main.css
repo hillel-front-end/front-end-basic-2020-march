@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+  padding: 5px;
+  border: 2px solid black;
+
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.content-text {
+  /* border: 2px solid red; */
+  min-height: 100px;
+  font-size: 100%;
+}
+
+.images-container.desktop {
+  display: flex;
+} 
+
+.images-container.mobile {
+  display: none;
+} 
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-item {
+  width: 120px;
+  height: 120px;
+  /* border: 2px solid gold; */
+  border-radius: 4px;
+  background-color: gold;
+}
+
+.image-item:nth-child(2) {
+  background-color: aqua;
+}
+
+.image-item:nth-child(3) {
+  background-color: firebrick;
+}
+
+.landscape-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* mobile */
+@media (max-width: 768px) {
+  .container {
+    /* height: auto; */
+    height: initial;
+  }
+
+  .content-text {
+    min-height: 250px;
+    font-size: 120%;
+    text-align: center;
+  }
+  
+  .images-container {
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-item { 
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 15px;
+  }
+
+  .images-container.desktop {
+    display: none;
+  } 
+
+  .images-container.mobile {
+    display: flex;
+  } 
+}
+
+@media (max-width: 320px) {
+  .images-container {
+    padding: 0 4px;
+  }
+}
+
+
+/* tablet  769px - 1200px */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .content-text {
+    border-color: green;
+  }
+}
+
+
+@media (max-width: 1200px){
+  .content-text {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .content-text {
+    text-align: center;
+    letter-spacing: 4px;
+  }
+
+  .image-item, .landscape-container {
+    max-width: 450px;
+  }
+
+  .landscape-container {
+    flex-direction: row;
+  }
+
+  .landscape-container .image-item:first-child {
+    margin-right: 5px;
+  }
+
+  .landscape-container .image-item:last-child {
+    margin-left: 5px;
+  }
+}
+
+
+/* properties */
+/* https://html5book.ru/css3-mediazaprosy/#media */
+/* https://developer.mozilla.org/ru/docs/Web/CSS/@media */
+
+
+
+/* combinations */
+/* https://developer.mozilla.org/ru/docs/Web/CSS/Media_Queries/Using_media_queries */
