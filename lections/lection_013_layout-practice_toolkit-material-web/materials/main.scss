@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px/22px Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;
+}
+
+.header-site {
+    height: 65px;
+    border-bottom: 1px solid #bdc1c6;
+
+    display: flex;
+}
+
+.header-logo {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 40px;
+
+    img {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    list-style-type: none;
+
+    .nav-item {
+        margin-right: 20px;
+        color: #5f6368;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &.active {
+            border-bottom: 2px solid #4285f4;
+
+            &:hover {
+                border-bottom-color: transparent;
+            } 
+        }
+
+        .arrow-down {
+            display: none;
+            position: absolute;
+            bottom: 5px;
+            font-size: 14px;
+            left: calc(50% - 7px);
+        }
+
+        &:hover {
+            .arrow-down {
+                display: block;
+            }
+        } 
+    }
+}
+
+.main-nav, .nav-container, .nav-item {
+    height: 100%;
+}
+
+.popover-container {
+    visibility: hidden;
+    opacity: 0;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+
+        transition: all .1s ease-in 1s;
+    }
+
+    position: absolute;
+    // top: 100%;
+    // left: -5vw;
+    width: 75vw;
+    height: 100%;
+    max-height: 550px;
+    min-height: 450px;
+    transition: all .1s ease-in 0s;
+
+    display: flex;
+
+    $popover-list-width: 300px;
+    .popover-list {
+        height: 100%;
+        width: $popover-list-width;
+        background-color: #f8f9fa;
+        padding-top: 15px;
+        padding-right: 15px;
+        overflow-y: auto;
+
+        .popover-products-list {
+            list-style-type: none;
+        }
+
+        .popover-item {
+            padding-left: 15px;
+            margin-bottom: 5px;
+
+            &.active {
+                color: #000;
+                font-weight: bold;
+
+                border-radius: 0 15px 15px 0;
+                background-color: #e8eaed;
+            }
+
+            &:hover {
+                border-radius: 0 15px 15px 0;
+                background-color: #e8eaed;
+            }
+        }
+    }
+
+    .popover-products {
+        width: calc(100% - #{$popover-list-width});
+        height: 100%;
+        background-color: goldenrod;
+    }
+}
+
+.main-nav .nav-item:hover {
+    .popover-container {
+        visibility: visible;
+        opacity: 1;
+
+        transition: all .1s ease-in 1s;
+    }
+}
