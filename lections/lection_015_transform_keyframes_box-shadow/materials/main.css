@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.block {
+  width: 250px;
+  height: 200px;
+  border: 4px solid black;
+  border-radius: 15px;
+  background-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+  background-size: cover;
+  position: relative;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0;
+    color: yellowgreen;
+  }
+  35% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  50% {
+    -webkit-transform: scaleY(0.75);
+            transform: scaleY(0.75);
+  }
+  100% {
+    left: 450px;
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    color: yellowgreen;
+  }
+  35% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+  50% {
+    -webkit-transform: scaleY(0.75);
+            transform: scaleY(0.75);
+  }
+  100% {
+    left: 450px;
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+  }
+}
+
+.blink {
+  -webkit-animation: blink .5s infinite alternate;
+          animation: blink .5s infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.eye {
+  width: 50px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed;
+  left: 200px;
+  top: 300px;
+  -webkit-animation: eye 0.2s 2 alternate;
+          animation: eye 0.2s 2 alternate;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  border-radius: 50%;
+  -webkit-animation: circle .1s infinite alternate;
+          animation: circle .1s infinite alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.eye.i-2 {
+  left: 300px;
+}
+
+.eye.i-2 .circle {
+  animation: circle .1s infinite alternate-reverse;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes eye {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+  }
+}
+
+@keyframes eye {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 25px);
+  }
+}
+
+@keyframes circle {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 25px);
+  }
+}
+
+.spinner {
+  width: 75px;
+  height: 75px;
+  background-image: url(./hsl.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-animation: rotateInfinite 1s infinite linear;
+          animation: rotateInfinite 1s infinite linear;
+}
+
+.spinner:hover:after {
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 25%;
+}
+
+.spinner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  left: 5%;
+  top: 5%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@-webkit-keyframes rotateInfinite {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateInfinite {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.border-example {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: 200px;
+  height: 200px;
+  border-image-slice: 1;
+  border-width: 2px;
+  -o-border-image: linear-gradient(to left, #00C853, #B2FF59);
+     border-image: -webkit-gradient(linear, right top, left top, from(#00C853), to(#B2FF59));
+     border-image: linear-gradient(to left, #00C853, #B2FF59);
+}
+/*# sourceMappingURL=main.css.map */
