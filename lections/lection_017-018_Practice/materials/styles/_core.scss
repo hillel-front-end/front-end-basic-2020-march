@@ -1,0 +1,90 @@
+$ff_roboto: Roboto;
+
+%line-logo {
+    background-color: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    margin-left: 8px;
+    margin-right: 24px;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+%button {
+    height: 40px;
+    font-size: 13px;
+    line-height: 15px;
+    background: #000000;
+    border-radius: 8px;
+    color: #fff;
+    font-family: $ff_roboto;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@mixin bg($url, $size: auto, $position: center) {
+    background-image: url($url);
+    background-position: $position;
+    background-size: $size;
+
+    background-repeat: no-repeat;
+}
+
+$fs-sm: 13px;
+$fs-m: 16px;
+$fs-l: 24px;
+$fs-xl: 36px;
+
+$lh-sm: 15px;
+$lh-m: 24px;
+$lh-l: 38px;
+$lh-xl: 57px;
+
+
+$text-2: (
+    font-size: $fs-sm,
+    line-height: $lh-sm
+);
+
+$text-1: (
+    font-size: $fs-m,
+    line-height: $lh-m
+);
+
+$title-2: ( 
+    font-size: $fs-l,
+    line-height: $lh-l
+);
+
+$title-1: ( 
+    font-size: $fs-xl,
+    line-height: $lh-xl
+);
+
+
+$text-map: (
+    type_1: $text-1,
+    type_2: $text-2,
+);
+
+
+$title-map: (
+    type_1: $title-1,
+    type_2: $title-2,
+);
+
+@mixin text($size: 1) {
+    @each $key, $val in map-get($text-map, type_#{$size}) {
+        #{$key}: $val;
+    }
+}
+
+@mixin title($size: 1) {
+    @each $key, $val in map-get($title-map, type_#{$size}) {
+        #{$key}: $val;
+    }
+}
